@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: rgba(24, 24, 24, 0.95);
 }
 header{
     width: 100%;
@@ -250,6 +250,7 @@ header #title{
         width: 82%;
         margin-left: 10%;
         letter-spacing: 40%;
+        line-height: 1.5rem;
     }
     .img4{
         width: 190%;
@@ -288,3 +289,34 @@ header #title{
         margin-left: 22%;
     }
 }
+
+#img-content1{
+    display: flex;
+    margin-left: 19%;
+}
+#img-content2{
+    display: flex;
+    margin-left: 14%;
+}
+#logo{
+    display: flex;
+    margin-left: 20%;
+    margin-top: 5%;
+    
+}
+@media screen and (max-width: 800px){
+    #img-content1{
+        display: block;
+    }
+    #btn4{
+        margin-left: -155%;
+    }
+    #btn5{
+        margin-left: -155%;
+    }
+    #logo{
+        flex-direction: column;
+    }
+}
+
+

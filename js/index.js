@@ -5,16 +5,23 @@ const nav_bar = _$("nav-bar")
 const btn_1 = _$("btn1")
 const btn_2 = _$("btn2")
 const btn_3 = _$("btn3")
+const btn_4 = _$("btn4")
+const btn_5 = _$("btn5")
+
 const info_container = _$("info-container")
 const box_container_one = _$("box-container-one")
 const box_container_two = _$("box-container-two")
 const img_content1 = _$("img-content1")
 const img_content2 = _$("img-content2")
+const logo = _$("logo")
 
 let info_image = ["img/Vector (9).png","img/Vector (8).png","img/Vector (7).png"]
 let info_txt = ["A single source of truth","Intuitive interface","Or with rules"]
 let tab_nav_bar = ["Home","Product","About","Contact"]
-
+let tab_image1 = ["img/Card.png","img/Rectangle 1.png","img/Rectangle 1 (1).png","img/Rectangle 1 (2).png"]
+let tab_image2 = ["img/Rectangle 1 (3).png","img/Rectangle 1 (4).png","img/Rectangle 1 (5).png"]
+let tab_image3 = ["img/Card.png","img/Rectangle 1 (8).png","img/Rectangle 1 (7).png","img/Rectangle 1 (6).png"]
+let tab_logo = ["img/logos_apple-app-store.png","img/logos_apiary.png","img/logos_android-icon.png","img/logos_basecamp.png","img/Vector (2).png","img/Vector (3).png"]
 
 let data_txt = "When you add work to your Slate calendar we automatically calculate useful insights"
 let content_txt = "Ever wondered if you're too reliant on a client for work? Slate helps you identify ."
@@ -137,3 +144,34 @@ const box_loop_container = (selector,height,width,value,background,color,borderC
 
 box_loop_container(box_container_one,2.8,8,"Sign up","rgba(68, 82, 254, 1)","white","transparent",0,4,6.8,"img/Macbook Pro.png",18,"auto",3,2,"Work",content_txt)
 box_loop_container(box_container_two,2.8,10,"Try For Free","rgba(68, 82, 254, 1)","white","transparent",0,2,6.8,"img/Boards Notifications.png",20,"auto",1,2,"Design with real data",content_txt)
+
+const image_grid2 = (selector,table,width,height,marginTop,marginLeft,x) => {
+    table.forEach((data) => {
+        let t_div = _createElts("div")
+        let t_img = _createElts("img")
+        selector.appendChild(t_div)
+        t_div.appendChild(t_img)
+        image_grid(t_img,data,width,height,marginTop,marginLeft)
+        t_img.style.borderRadius = x +"px"
+        })
+}
+
+const chooseImage = () => {
+    const screenWidth = window.innerWidth;
+
+    if(screenWidth >=800){
+        image_grid2(img_content1,tab_image1,12,16,2,2,10)
+        image_grid2(img_content2,tab_image2,20,16,2,2,10)
+        buttonCheck(btn_4,3,9,"See more","transparent","white","white",0,3,44)
+    }
+    else{
+        image_grid2(img_content1,tab_image3,17,16,2,-1,10)
+        buttonCheck(btn_4,3,9,"See more","transparent","white","white",0,3,44)
+    }
+}
+
+chooseImage()
+window.addEventListener("resize",chooseImage)
+
+image_grid2(logo,tab_logo,3.1,3.5,0,5,0)
+buttonCheck(btn_5,3,9,"All Partners","transparent","white","white",0,2,44)
