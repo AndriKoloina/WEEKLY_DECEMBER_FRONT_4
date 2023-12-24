@@ -14,7 +14,8 @@ const box_container_one = _$("box-container-one")
 const box_container_two = _$("box-container-two")
 const img_content1 = _$("img-content1")
 const img_content2 = _$("img-content2")
-const logo = _$("logo")
+const logo1 = _$("logo1")
+const logo2 = _$("logo2")
 const info_container_one = _$("info-container-one")
 const info_container_two = _$("info-container-two")
 const chart_container = _$("chart-container")
@@ -31,7 +32,8 @@ let tab_nav_bar = ["Home","Product","About","Contact"]
 let tab_image1 = ["img/Card.png","img/Rectangle 1.png","img/Rectangle 1 (1).png","img/Rectangle 1 (2).png"]
 let tab_image2 = ["img/Rectangle 1 (3).png","img/Rectangle 1 (4).png","img/Rectangle 1 (5).png"]
 let tab_image3 = ["img/Card.png","img/Rectangle 1 (8).png","img/Rectangle 1 (7).png","img/Rectangle 1 (6).png"]
-let tab_logo = ["img/logos_apple-app-store.png","img/logos_apiary.png","img/logos_android-icon.png","img/logos_basecamp.png","img/Vector (2).png","img/Vector (3).png"]
+let tab_logo = ["img/logos_apple-app-store.png","img/logos_apiary.png","img/logos_android-icon.png"]
+let tab_logo1 = ["img/logos_basecamp.png","img/Vector (2).png","img/Vector (3).png"]
 let tab_name1 = ["Claire Bell","Ralph Fisher"]
 let tab_name2 = ["Francisco Lane","Jorge Murphy"]
 let tab_name3 = ["Wade Steward","Philip Watson","Arthur Wilson","Regina Black"]
@@ -195,7 +197,8 @@ const chooseImage = () => {
 chooseImage()
 window.addEventListener("resize",chooseImage)
 
-image_grid2(logo,tab_logo,3.1,3.5,0,5,0)
+image_grid2(logo1,tab_logo,3.1,3.5,0,5,0)
+image_grid2(logo2,tab_logo1,3.1,3.5,0,5,0)
 buttonCheck(btn_5,3,9,"All Partners","transparent","white","white",0,2,44)
 
 const test_loop = (selector,table1,table2) => {
@@ -286,8 +289,8 @@ const chooseInfo = () => {
     }
     else{
         test_loop1(info_container_one,tab_image6,tab_name3)
-        image_grid(img_chart,"img/Line Chart 1(2).png",25,18,5,0)
-        graph(chart_container,38.4,24.7,'rgba(52, 52, 52, 1)',0)
+        image_grid(img_chart,"img/Line Chart 1(2).png",25,18,5,1)
+        graph(chart_container,35.7,26.7,'rgba(52, 52, 52, 1)',0)
     }
 }
 chooseInfo()
