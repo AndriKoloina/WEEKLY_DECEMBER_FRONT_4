@@ -290,7 +290,7 @@ const chooseInfo = () => {
     else{
         test_loop1(info_container_one,tab_image6,tab_name3)
         image_grid(img_chart,"img/Line Chart 1(2).png",25,18,5,1)
-        graph(chart_container,35.7,26.7,'rgba(52, 52, 52, 1)',0)
+        graph(chart_container,35.9,26.7,'rgba(52, 52, 52, 1)',0)
     }
 }
 chooseInfo()
