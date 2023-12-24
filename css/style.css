@@ -166,11 +166,11 @@ header #title{
     color: rgba(255, 255, 255, 0.841);
     font-family: 'Graphik', sans-serif;
     font-weight: 100;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-align: center;
-    width: 40%;
-    margin-left: 29%;
-    letter-spacing: 40%;
+    width: 38%;
+    margin-left: 31%;
+    letter-spacing:0.1em;
 }
 
 .inline{
@@ -319,4 +319,175 @@ header #title{
     }
 }
 
+#box-info-container{
+    display: flex;
+    margin-left: 25%;
+}
 
+#info-container-two{
+    margin-left: 1rem;
+    margin-top: -1%;
+}
+.box-inline-name{
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.871);
+    font-family: 'Graphik',sans-serif;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.box-inline{
+    display: flex;
+}
+.box-inline-info{
+    color: rgba(255, 255, 255, 0.796);
+    font-family: 'Graphik',sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.01rem;
+    line-height: 1.5rem;
+    font-weight: lighter;
+}
+.border{
+    border:1px solid white;
+    padding: 2.5rem
+}
+.spacing{
+    margin-top: 1rem;
+}
+.img-space{
+    margin-left: 50%;
+}
+@media screen and (max-width: 800px){
+    #box-info-container{
+        display: block;
+        margin-left: 9%;
+        margin-top: 5%;
+    }
+    #info-container-two{
+        margin-left: 0rem;
+        margin-top: 0%;
+    }
+    .box-inline-info{
+        margin-bottom: 20rem;
+        letter-spacing: 0.1rem;
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+}
+
+.title-chart{
+    font-size: 3rem;
+    font-family: 'Graphik',sans-serif;
+    color: white;
+    font-weight: 100;
+    width: 60%;
+    margin-left: 1%;
+}
+
+#chart-container{
+    border: 1px solid transparent;
+    padding: 5%;
+    display: flex;
+}
+.tbody5{
+    margin-top: 15%;
+    margin-left: 14%;
+}
+
+#img-chart{
+    position: absolute;
+    height: 18rem;
+    width: 30rem;
+    border-radius: 0 0 2rem 0;
+    margin-top: -3%;
+    margin-left: 35.9%;
+}
+
+@media screen and (max-width: 800px){
+    .title-chart{
+        font-size: 3rem;
+        font-family: 'Graphik',sans-serif;
+        color: white;
+        font-weight: 100;
+        width: 80%;
+        margin-left: 10%;
+        text-align: center;
+    }
+    #chart-container{
+        display: block;
+        padding: 0;
+    }
+
+    
+    #btn6{
+        margin-left: 25%;
+    }
+    .tbody5{
+        margin-top: 15%;
+        margin-left: -1%;
+    }
+}
+
+footer{
+    display: flex;
+    margin-top: 10%;
+    padding: 1%;
+}
+footer h3{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Graphik',sans-serif;
+    
+}
+.inline-footer{
+    margin-left: 13%;
+}
+.inline-item{
+    margin-top:30%;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Graphik',sans-serif;
+    font-size: 0.9rem;
+}
+.i{
+    color: transparent;
+}
+
+.location{
+    color: rgba(255, 255, 255,1);
+    font-family: 'Graphik',sans-serif;
+    font-size: 0.9rem;
+    margin-left: 1%;
+    margin-left: 15%;
+    width: 100%;
+    margin-top: -12%;
+}
+.contact{
+    margin-left: 5%;
+}
+#contact-logo{
+    display: flex;
+}
+@media screen and (max-width: 800px){
+    footer{
+        display: block;
+        margin-top: 10%;
+    }
+    .inline-item{
+        margin-top:5%;
+        letter-spacing:0.1rem;
+    }
+    .contact{
+        margin-left: 15%;
+    }
+    #footer2{
+        margin-top: 15%;
+    }
+    #footer3{
+        margin-top: 15%;
+    }
+    .location{
+        margin-top: -8%;
+    }
+    .contact{
+        margin-top: 15%;
+    }
+}
